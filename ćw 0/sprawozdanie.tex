@@ -113,8 +113,7 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 \begin{tabular}{@{}c@{}}Długość wahadła [$mm$]\end{tabular} &
 \begin{tabular}{@{}c@{}}Czas 20 okresów [$s$]\end{tabular} &
 \begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Wartość $g$\\~[$\frac{m}{s^2}$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Niepewność\\$u(g)$~[$\frac{m}{s^2}$]\end{tabular}\\
+\begin{tabular}{@{}c@{}}Wartość $g$\\~[$\frac{m}{s^2}$]\end{tabular} \\
 \midrule
 135  &  14,23  &  0,7115  &  10,52794716  \\
 175  &  16,1   &  0,805   &  10,66119838  \\
@@ -162,6 +161,14 @@ $$u_c(g)=\sqrt{\frac{64\pi^4 l^2}{T^6}u(T)^2+\frac{16\pi^4}{T^4}u(l)^2} =  0,37 
 
 $$U_c(g) = k \cdot u_c(g) = 2 \cdot 0,37 [\frac{m}{s^2}] = 0,74 [\frac{m}{s^2}] $$
 
+\subsection{Zgodność z wartością tabelaryczną}
+
+Uzyskana wartość przyspieszenia grawitacyjnego $g = 7,02 \frac{m}{s^2}$ nie jest zgodna (w granicach wartości niepewności rozszerzonej) z wartością tabelaryczną $g_{krk} = 9,811 \frac{m}{s^2}$:
+
+$$\vert g - g_{krk} \vert = 2,791$$
+
+\newpage
+
 \subsection{Wykresy}
 
 \begin{figure}[!htp]
@@ -176,6 +183,32 @@ $$U_c(g) = k \cdot u_c(g) = 2 \cdot 0,37 [\frac{m}{s^2}] = 0,74 [\frac{m}{s^2}] 
 \label{fig:ttl}
 \end{figure}
 
+\subsection{Regresja liniowa metodą najmniejszych kwadratów}
+
+Do punktów doswiadczalnych dopasowano prostą $y = a x$ metodą najmniejszych kwadratów:
+
+$$ a = \frac{\sum l_i T_i}{\sum l_i^2} = 3,906510974$$
+
+Wartość przyspieszenia grawitacyjnego jest określona wzorem:
+
+$$ g = \frac{4 \pi^2}{a} = 10,10579974 \frac{m}{s^2} $$
+
+Wartość niepewności współczynnika nachylenia $a$:
+
+$$ u(a) = \sqrt{ \frac{S^2}{(n - 1)\sum x_i^2} } = 0,05558272514 [\frac{s^2}{m}]$$
+
+Wartość niepewności przyspieszenia grawitacyjnego $g$:
+
+$$ u(g) = \vert - \frac{4 \pi^2}{a^2} u(a) \vert = 0,1437876134 [\frac{m}{s^2}]$$
+
+$$ U(g) = k \cdot u(g) = 0,2875752268 [\frac{m}{s^2}]$$
+
+Uzyskana wartość nie mieści się w niepewności zwykłej, ani rozszerzonej:
+
+$$ \vert g - g_{krk} \vert = 10,10579974 \frac{m}{s^2} - 9,811 \frac{m}{s^2} = 0,29479974 $$
+
 \section{Wnioski}
+
+
 
 \end{document}
