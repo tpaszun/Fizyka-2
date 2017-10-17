@@ -1,0 +1,131 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.5}
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	EAIiIB & \multicolumn{2}{|c|}{Piotr Morawiecki, Tymoteusz Paszun} & Rok II & {Grupa 3a} & {Zespół 6} \\
+	\hline
+	\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: Opracowanie danych pomiarowych \end{tabular}} & 
+	\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: 0 \end{tabular}} \\
+	\hline
+	\begin{tabular}{@{}c@{}}Data wykonania:\\11.10.2017r.\end{tabular} & \begin{tabular}{@{}c@{}}Data oddania:\\18.10.2017r.\end{tabular} & 
+	\begin{tabular}{c}Zwrot do poprawki:\\\phantom{data} \end{tabular} & \begin{tabular}{c}Data oddania:\\\phantom{data}\end{tabular} &
+	\begin{tabular}{@{}c@{}}Data zaliczenia:\\\phantom{data}\end{tabular} & \begin{tabular}{c}Ocena:\\\phantom{ocena}\end{tabular} \\[4ex]
+	\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\section{Cel ćwiczenia}
+
+Celem ćwiczenia jest zapoznanie się z metodami opracowania danych pomiarowych oraz szacowania niepewności pomiarów. Cel jest realizowany podczas próby wyznaczenia przyspieszenia grawitacyjnego Ziemi przy pomocy wahadła matematycznego.
+
+\section{Wstęp teoretyczny}
+
+\subsection{Wahadło matematyczne}
+
+Wahadło matematyczne to masa punktowa m zawieszona na nierozciągliwej i nieważkiej nici o długości l poruszająca się w jednorodnym polu grawitacyjnym. Podczas ćwiczenia użyjemy metalowego ciężarka zawieszonego na cienkiej lince, które stanowią dobre przyblizenie takiego układu.
+
+Wprawiając wahadło w ruch poprzez wychylenie o niewielkie kąty $\theta$ możemy zastosować przybliżenie $\sin\theta\approx\theta$. W takim przypadku z uproszczonego równania ruchu wahadła otrzymamy zależność: $$T = 2\pi\sqrt{\frac{l}{g}}$$gdzie $T$ to okres drgań wahadła, $l$ to długość nici, a $g$ jest przyspieszeniem grawitacyjnym. Po przekształceniu równania otrzymujemy wzór na przyspieszenie grawitacyjne: $$g = \frac{4\pi^2l}{T^2}$$
+
+\subsection{Niepewność pomiaru}
+
+\section{Opis doświadczenia}
+
+\section{Opracowanie wyników}
+
+\section{Wyniki pomiarów}
+
+\begin{table}[!htbp]
+\caption{Pomiary dla wahadła o długości $l=485mm$, czas mierzony co 20 okresów}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rcccc@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Lp.\end{tabular} &
+\begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 20 okresów [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular}\\
+\midrule
+1  &  20   &  27,52   &  27,52  &  1,376  \\
+2  &  40   &  62,36   &  34,84  &  1,742  \\
+3  &  60   &  98,67   &  36,31  &  1,8155 \\
+4  &  80   &  133,45  &  34,78  &  1,739  \\
+5  &  100  &  168,08  &  34,63  &  1,7315 \\
+6  &  120  &  202,58  &  34,5   &  1,725  \\
+7  &  140  &  235,92  &  33,34  &  1,667  \\
+8  &  160  &  275,92  &  40     &  2      \\
+9  &  180  &  311,98  &  36,06  &  1,803  \\
+10 &  200  &  349,08  &  37,1   &  1,855  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!htbp]
+\caption{Pomiary dla wahadła o długości $l=485mm$, czas mierzony co 30 okresów}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rcccc@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Lp.\end{tabular} &
+\begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 20 okresów [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular}\\
+\midrule
+1  &  30   &  40,11   &  40,11  &  1,337  \\
+2  &  60   &  90,39   &  50,28  &  1,676  \\
+3  &  90   &  144,45  &  54,06  &  1,802  \\
+4  &  120  &  193,17  &  48,72  &  1,624  \\
+5  &  150  &  245,76  &  52,59  &  1,753  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!htbp]
+\caption{Pomiary dla zmiennej długości wahadła}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rccrr@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Długość wahadła [$mm$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 20 okresów [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Wartość $g$\\~[$\frac{m}{s^2}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Niepewność\\$u(g)$~[$\frac{m}{s^2}$]\end{tabular}\\
+\midrule
+135  &  14,23  &  0,7115  &  10,52794716  \\
+175  &  16,1   &  0,805   &  10,66119838  \\
+215  &  18,4   &  0,92    &  10,02818973  \\
+255  &  19,09  &  0,9545  &  11,04963804  \\
+295  &  20,56  &  1,028   &  11,02035344  \\
+335  &  23     &  1,15    &  10,00020408  \\
+375  &  24,81  &  1,2405  &  9,620496086  \\
+415  &  25,59  &  1,2795  &  10,00753812  \\
+455  &  26,75  &  1,3375  &  10,04115225  \\
+485  &  27,73  &  1,3865  &  9,96005479   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Wnioski}
+
+\end{document}
