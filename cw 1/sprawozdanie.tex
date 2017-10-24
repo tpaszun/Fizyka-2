@@ -1,7 +1,7 @@
 \documentclass{article}
 
 \usepackage{polski}
-\usepackage[UTF8]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[margin=1in]{geometry}
@@ -17,6 +17,8 @@
 
 \title{Sprawozdanie}
 \begin{document}
+
+\newcommand{\unit}[1]{\thinspace \mathrm{#1}}
 	
 \begin{center}
 	\bgroup
@@ -42,21 +44,21 @@ Zbadanie zależności współczynnika załamania od długości fali.
 Gdy wiązka światła przechodzi przez dwa ośrodki o różnych własnościach optycznych, to na powierzchni granicznej częściowo zostaje odbita, częściowo zaś przechodzi do drugiego środowiska, ulegając załamaniu.
 Prawo załamania:
 $$\frac{sin \alpha}{sin \beta} = n$$ 
-Wielkość n jest stała zwaną współczynnikiem załamania ośrodka 2 względem ośrodka 1. 
-Współczynnik załamania zależy od długości fali światła padającego. 
+Wielkość $n$ jest stała zwaną współczynnikiem załamania ośrodka drugiego względem ośrodka pierwszego. Współczynnik załamania zależy od długości fali światła padającego. 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=90mm]{image006.jpg}
-	\caption{Powstanie  pozornego  obrazu  $O_{1}$ punktu  $O$  leżącego  na  dolnej  powierzchni płytki płaskorównoległej }
+	\caption{Powstanie pozornego obrazu $O_{1}$ punktu $O$ leżącego na dolnej  powierzchni płytki płaskorównoległej }
 \end{figure}
 
 \clearpage
 \section{Układ pomiarowy}
 W skład układu pomiarowego wchodzą: 
 \begin{enumerate}
-\item Mikroskop wyposażony w czujnik mikrometryczny i nasadkę krzyżową
+\item Mikroskop wyposażony w czujnik mikrometryczny i nasadkę krzyżową.
 \item Śruba mikrometryczna. 
-\item Zestaw płytek szklanych i z pleksiglasu, różnej grubości
+\item Zestaw płytek szklanych i z pleksiglasu, różnej grubości.
+\item Kolorowe filtry.
 \end{enumerate}
 \section{Wyniki pomiarów}
 
@@ -66,7 +68,7 @@ W skład układu pomiarowego wchodzą:
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: szkło\\ Grubość rzeczywista: $d$ =5,34 [mm]\\ niepewność $u(d)$=0,01 [mm] \end{tabular}}\\
+		\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: szkło\\ Grubość rzeczywista: $d = 5,34 \unit{[mm]}$\\ niepewność $u(d) = 0,01 \unit{[mm]}$ \end{tabular}}\\
 		\hline
 		\multirow{3}{*}{Lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & \begin{tabular}{c}Grubość \\pozorna\end{tabular} &\begin{tabular}{c}Współczynnik \\załamania\end{tabular} \\ \cline{2-5}
 		& \parbox[c]{1.8 cm}{\centering $a_{d}$}  & $a_{g}$ & $h=a_{d}-a_{g}$ & \multirow{2}{*}{$n=\frac{d}{h}$}\\ \cline{2-4}
@@ -103,7 +105,7 @@ W skład układu pomiarowego wchodzą:
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: szkło\\ Grubość rzeczywista: $d$ =2,97 [mm]\\ niepewność $u(d)$=0,01 [mm] \end{tabular}}\\
+			\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: szkło\\ Grubość rzeczywista: $d = 2,97 \unit{[mm]}$\\ niepewność $u(d) = 0,01 \unit{[mm]}$ \end{tabular}}\\
 			\hline
 			\multirow{3}{*}{Lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & \begin{tabular}{c}Grubość \\pozorna\end{tabular} &\begin{tabular}{c}Współczynnik \\załamania\end{tabular} \\ \cline{2-5}
 			& \parbox[c]{1.8 cm}{\centering $a_{d}$}  & $a_{g}$ & $h=a_{d}-a_{g}$ & \multirow{2}{*}{$n=\frac{d}{h}$}\\ \cline{2-4}
@@ -140,7 +142,7 @@ W skład układu pomiarowego wchodzą:
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: pleksiglas\\ Grubość rzeczywista: $d$ =3,88 [mm]\\ niepewność $u(d)$=0,01 [mm] \end{tabular}}\\
+			\multicolumn{5}{|l|}{\begin{tabular}{l} Materiał: pleksiglas\\ Grubość rzeczywista: $d = 3,88 \unit{[mm]}$\\ niepewność $u(d) = 0,01 \unit{[mm]}$ \end{tabular}}\\
 			\hline
 			\multirow{3}{*}{Lp.} & \multicolumn{2}{|c|}{Wskazanie czujnika} & \begin{tabular}{c}Grubość \\pozorna\end{tabular} &\begin{tabular}{c}Współczynnik \\załamania\end{tabular} \\ \cline{2-5}
 			& \parbox[c]{1.8 cm}{\centering $a_{d}$}  & $a_{g}$ & $h=a_{d}-a_{g}$ & \multirow{2}{*}{$n=\frac{d}{h}$}\\ \cline{2-4}
@@ -213,10 +215,10 @@ W skład układu pomiarowego wchodzą:
 \subsection{Współczynnik załamania światła}
 Współczynnik załamania światła obliczamy ze wzoru:
 $$n=\frac{d}{h}$$
-$d$-grubość rzeczywista  $h$-grubość pozorna
+gdzie: $d$ - grubość rzeczywista, $h$ - grubość pozorna
 \subsection{Niepewność pomiaru grubości rzeczywistej płytki}
 Pomiaru grubości płytki dokonywaliśmy za pomocą śruby mikrometrycznej, więc
-$$u(d) = 0,01 [mm]$$
+$$u(d) = 0,01 \unit{[mm]}$$
 \subsection{Niepewność typu A dla grubości pozornej}
 	\begin{adjustwidth}{-1cm}{}
 	\def\arraystretch{1.3}
@@ -253,7 +255,7 @@ $$ u(n) = n \sqrt{\bigg(\frac{u(d)}{d}\bigg)^2+\bigg(\frac{u(h)}{h}\bigg)^2}$$
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
-		\multicolumn{1}{|c|}{\begin{tabular}{@{}c@{}}Rodzaj \\materiału\end{tabular}}&{\begin{tabular}{@{}c@{}}Rodzaj \\światła\end{tabular}}&{\begin{tabular}{@{}c@{}}współczynnik n \\tablicowy\end{tabular}}& \begin{tabular}{@{}c@{}}Współczynnik \\załamania $n$ \end{tabular} & Niepewność $u(n)$& \begin{tabular}{@{}c@{}}Zgodność z wartością tablicową \\w granicach \\niepewności rozszerzonej\end{tabular}\\
+		\multicolumn{1}{|c|}{\begin{tabular}{@{}c@{}}Rodzaj \\materiału\end{tabular}}&{\begin{tabular}{@{}c@{}}Rodzaj \\światła\end{tabular}}&{\begin{tabular}{@{}c@{}}Współczynnik $n$ \\tablicowy\end{tabular}}& \begin{tabular}{@{}c@{}}Współczynnik \\załamania $n$ \end{tabular} & Niepewność $u(n)$& \begin{tabular}{@{}c@{}}Zgodność z wartością tablicową \\w granicach \\niepewności rozszerzonej\end{tabular}\\
 		\hline
 		Szkło&Białe&1,50-1,54& 1,723 & 0,0104 & NIE\\
 		\hline
@@ -272,7 +274,7 @@ $$ u(n) = n \sqrt{\bigg(\frac{u(d)}{d}\bigg)^2+\bigg(\frac{u(h)}{h}\bigg)^2}$$
 
 
 \section{Wnioski}
-Zdecydowana większość otrzymanych wartości współczynników załamania światła nie jest zgodna z ich wartościami tablicowymi w granicach niepewności rozszerzonej. Przyczyną błędnych wyników jest prawdopodobnie mała dokładność metody pomiaru, ponieważ ciężko jest określić czy obraz mikroskopu jest dostatecznie ostry.
+Zdecydowana większość otrzymanych wartości współczynników załamania światła nie jest zgodna z ich wartościami tablicowymi w granicach niepewności rozszerzonej. Przyczyną błędnych wyników jest prawdopodobnie mała dokładność metody pomiaru, ponieważ ciężko jest określić czy obraz mikroskopu jest dostatecznie ostry. Inną możliwą przyczyną niezgodności z wartościami tablicowymi może być rozrzut wartości współczynnika załamania światła w zależności od rodzaju szkła, który może mieć wartości od $1,40$ do $1,90$
 
 Poprzez oświetlenie płyki z pleksiglasu kolorem czerwonym i niebieskim możemy stwierdzić, że współczynnik załamania światła zależy od długości fali, a więc zachodzi zjawisko dyspersji. Współczynnik załamania światła dla światła czerwonego ma większą wartość od wartości dla światła niebieskiego, a więc wraz ze wzrostem długości fali światła współczynnik załamania maleje.
 \end{document}
