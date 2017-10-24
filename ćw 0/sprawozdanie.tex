@@ -10,6 +10,8 @@
 
 \begin{document}
 
+\newcommand{\unit}[1]{\thinspace \mathrm{#1}}
+
 \begin{center}
 \bgroup
 \def\arraystretch{1.5}
@@ -28,13 +30,14 @@
 \egroup
 \end{center}
 
+
 \section{Cel ćwiczenia}
 
 Celem ćwiczenia jest zapoznanie się z metodami opracowania danych pomiarowych oraz szacowania niepewności pomiarów. Cel jest realizowany podczas próby wyznaczenia przyspieszenia grawitacyjnego Ziemi przy pomocy wahadła matematycznego.
 
 \section{Wstęp teoretyczny - wahadło matematyczne}
 
-Wahadło matematyczne to masa punktowa m zawieszona na nierozciągliwej i nieważkiej nici o długości l poruszająca się w jednorodnym polu grawitacyjnym. Podczas ćwiczenia użyjemy metalowego ciężarka zawieszonego na cienkiej lince, które stanowią dobre przyblizenie takiego układu.
+Wahadło matematyczne to masa punktowa $m$ zawieszona na nierozciągliwej i nieważkiej nici o długości $l$ poruszająca się w jednorodnym polu grawitacyjnym. Podczas ćwiczenia użyjemy metalowego ciężarka zawieszonego na cienkiej lince, które stanowią dobre przyblizenie takiego układu.
 
 Wprawiając wahadło w ruch poprzez wychylenie o niewielkie kąty $\theta$ możemy zastosować przybliżenie $\sin\theta\approx\theta$. W takim przypadku z uproszczonego równania ruchu wahadła otrzymamy zależność: $$T = 2\pi\sqrt{\frac{l}{g}}$$gdzie $T$ to okres drgań wahadła, $l$ to długość nici, a $g$ jest przyspieszeniem grawitacyjnym. Po przekształceniu równania otrzymujemy wzór na przyspieszenie grawitacyjne: $$g = \frac{4\pi^2l}{T^2}$$
 
@@ -42,7 +45,7 @@ Wprawiając wahadło w ruch poprzez wychylenie o niewielkie kąty $\theta$ może
 
 \subsection{Stała długość wahadła}
 
-W pierwszej części doświadczenia zebrane zostały pomiary czasów okresów wahadła dla stałej długości $l = 485mm$. Wahadło zostało wprawione w ruch jednocześnie z uruchomieniem stopera. Co dwadzieścia okresów ze stopera był odczytywany pomiar czasu od startu. Koniec miał miejsce po uzyskaniu dziesięciu odczytów (i wykonaniu przez wahadło dwustu okresów). Czas kolejnych dwudziesu okresów został wyznaczony na podstawie różnicy pomiędzy kolejnymi odczytami wskazań stopera.
+W pierwszej części doświadczenia zebrane zostały pomiary czasów okresów wahadła dla stałej długości $l = 485 \unit{mm}$. Wahadło zostało wprawione w ruch jednocześnie z uruchomieniem stopera. Co dwadzieścia okresów ze stopera był odczytywany pomiar czasu od startu. Koniec miał miejsce po uzyskaniu dziesięciu odczytów (i wykonaniu przez wahadło dwustu okresów). Czas kolejnych dwudziesu okresów został wyznaczony na podstawie różnicy pomiędzy kolejnymi odczytami wskazań stopera.
 
 Pomiar dla stałej długości został powtórzony mierząc czas co trzydzieści okresów - dokonano pięciu odczytów, do wykonania przez wahadło stupięćdziesięciu okresów.
 
@@ -53,7 +56,7 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 \section{Wyniki pomiarów}
 
 \begin{table}[!htbp]
-\caption{Pomiary dla wahadła o długości $l=485mm$, czas mierzony co 20 okresów}
+\caption{Pomiary dla wahadła o długości $l=485 \unit{mm}$, czas mierzony co 20 okresów}
 \centering
 \def\arraystretch{1.4}
 \begin{tabular}{@{}rcccc@{}}
@@ -61,27 +64,27 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 \toprule
 \begin{tabular}{@{}c@{}}Lp.\end{tabular} &
 \begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas $t'$ dla 20 okresów [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular}\\
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 20 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular}\\
 \midrule
 1  &  20   &  27,52   &  27,52  &  1,38  \\
 2  &  40   &  62,36   &  34,84  &  1,74  \\
-3  &  60   &  98,67   &  36,31  &  1,82 \\
+3  &  60   &  98,67   &  36,31  &  1,82  \\
 4  &  80   &  133,45  &  34,78  &  1,74  \\
-5  &  100  &  168,08  &  34,63  &  1,73 \\
-6  &  120  &  202,58  &  34,5   &  1,73  \\
+5  &  100  &  168,08  &  34,63  &  1,73  \\
+6  &  120  &  202,58  &  34,50  &  1,73  \\
 7  &  140  &  235,92  &  33,34  &  1,67  \\
-8  &  160  &  275,92  &  40     &  2      \\
-9  &  180  &  311,98  &  36,06  &  1,8  \\
-10 &  200  &  349,08  &  37,1   &  1,86  \\
+8  &  160  &  275,92  &  40,00  &  2,00  \\
+9  &  180  &  311,98  &  36,06  &  1,80  \\
+10 &  200  &  349,08  &  37,10  &  1,86  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
 \begin{table}[!htbp]
-\caption{Pomiary dla wahadła o długości $l=485mm$, czas mierzony co 30 okresów}
+\caption{Pomiary dla wahadła o długości $l=485 \unit{mm}$, czas mierzony co 30 okresów}
 \centering
 \def\arraystretch{1.4}
 \begin{tabular}{@{}rcccc@{}}
@@ -89,13 +92,13 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 \toprule
 \begin{tabular}{@{}c@{}}Lp.\end{tabular} &
 \begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas $t'$ dla 30 okresów [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular}\\
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 30 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular}\\
 \midrule
 1  &  30   &  40,11   &  40,11  &  1,34  \\
 2  &  60   &  90,39   &  50,28  &  1,68  \\
-3  &  90   &  144,45  &  54,06  &  1,8  \\
+3  &  90   &  144,45  &  54,06  &  1,80  \\
 4  &  120  &  193,17  &  48,72  &  1,62  \\
 5  &  150  &  245,76  &  52,59  &  1,75  \\
 \bottomrule
@@ -110,18 +113,18 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 \begin{tabular}{@{}rccrr@{}}
 \\
 \toprule
-\begin{tabular}{@{}c@{}}Długość wahadła [$mm$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas 20 okresów [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Czas 1 okresu [$s$]\end{tabular} &
-\begin{tabular}{@{}c@{}}Wartość $g$\\~[$\frac{m}{s^2}$]\end{tabular} \\
+\begin{tabular}{@{}c@{}}Długość wahadła [$\unit{mm}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 20 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Wartość $g$ [$\unit{\frac{m}{s^2}}$]\end{tabular} \\
 \midrule
 
 135  &  14,23  &  0,7115  &  10,53  \\
-175  &  16,1   &  0,805   &  10,66  \\
-215  &  18,4   &  0,92    &  10,03  \\
+175  &  16,10  &  0,805   &  10,66  \\
+215  &  18,40  &  0,92    &  10,03  \\
 255  &  19,09  &  0,9545  &  11,05  \\
 295  &  20,56  &  1,028   &  11,02  \\
-335  &  23     &  1,15    &  10,00  \\
+335  &  23,00  &  1,15    &  10,00  \\
 375  &  24,81  &  1,2405  &  9,62  \\
 415  &  25,59  &  1,2795  &  10,00  \\
 455  &  26,75  &  1,3375  &  10,04  \\
@@ -139,35 +142,35 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 
 1. Pomiary dla stałej długości wahadła wskazują na poważne błędy podczas wykonania doświadczenia. O ile wartość przyspieszenia grawitacyjnego wyznaczona na podstawie pierwszego odczytu daje wynik zbliżony do spodziewanej wartości tabelarycznej, tak już kolejne różnią się od niej znacznie. Taką samą tendencję można zaobserwować dla powtórzonych pomiarów.
 
-2. Wartości przyspieszenia grawitacyjnego dla pomiarów dla zmiennej długości wahadła wskazują, że dla wartości $l=255mm$ oraz $l=295mm$ mógł nastąpić błąd w liczeniu ilości okresów.
+2. Wartości przyspieszenia grawitacyjnego dla pomiarów dla zmiennej długości wahadła wskazują, że dla wartości $l=255 \unit{mm}$ oraz $l=295 \unit{mm}$ mógł nastąpić błąd w liczeniu ilości okresów.
 
 \subsection{Niepewność pomiaru okresu}
 
 Niepewność pomiaru okresu obliczamy metodą typu A, czyli jako estymator odchylenia standardowego wartości średniej:
 
-$$u(T)\equiv s_{\overline{T}} = \sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = \sqrt{\frac{\sum{(T_i-1,65s)^2}}{90}} = 0,31 [s] $$
+$$u(T)\equiv s_{\overline{T}} = \sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = \sqrt{\frac{\sum{(T_i-1,65 \unit{s})^2}}{90}} = 0,31 \unit{[s]} $$
 
 \subsection{Niepewność pomiaru długości wahadła}
-Pomiar długości wahadła był wykonywany za pomocą linijki z działką o dokładności $1mm$, więc:
-$$u(l)=1 [mm]$$
+Pomiar długości wahadła był wykonywany za pomocą linijki z działką o dokładności $1 \unit{mm}$, więc:
+$$u(l)=1 \unit{[mm]}$$
 
 \subsection{Obliczenie przyspieszenia grawitacyjnego Ziemi}
 
-$$g = \frac{4\pi^2l}{T^2} = 7,02 \frac{m}{s^2}$$
+$$g = \frac{4\pi^2l}{T^2} = 7,02 \unit{\frac{m}{s^2}}$$
 
 \subsection{Niepewność złożona}
 
-$$u_c(g)=\sqrt{\frac{64\pi^4 l^2}{T^6}u(T)^2+\frac{16\pi^4}{T^4}u(l)^2} =  0,37 [\frac{m}{s^2}]$$
+$$u_c(g)=\sqrt{\frac{64\pi^4 l^2}{T^6}u(T)^2+\frac{16\pi^4}{T^4}u(l)^2} =  0,37 \unit{[\frac{m}{s^2}]}$$
 
 \subsection{Niepewność rozszerzona}
 
-$$U_c(g) = k \cdot u_c(g) = 2 \cdot 0,37 [\frac{m}{s^2}] = 0,74 [\frac{m}{s^2}] $$
+$$U_c(g) = k \cdot u_c(g) = 2 \cdot 0,37 [\frac{m}{s^2}] = 0,74 \unit{[\frac{m}{s^2}]}$$
 
 \subsection{Zgodność z wartością tabelaryczną}
 
-Uzyskana wartość przyspieszenia grawitacyjnego $g = 7,02 \frac{m}{s^2}$ nie jest zgodna (w granicach wartości niepewności rozszerzonej) z wartością tabelaryczną $g_{krk} = 9,811 \frac{m}{s^2}$:
+Uzyskana wartość przyspieszenia grawitacyjnego $g = 7,02 \unit{\frac{m}{s^2}}$ nie jest zgodna (w granicach wartości niepewności rozszerzonej) z wartością tabelaryczną $g_{krk} = 9,811 \unit{\frac{m}{s^2}}$:
 
-$$\vert g - g_{krk} \vert = 2,791$$
+$$\vert g - g_{krk} \vert = 2,791 \unit{\frac{m}{s^2}}$$
 
 \newpage
 
@@ -193,21 +196,21 @@ $$ a = \frac{\sum l_i T_i}{\sum l_i^2} = 3,91 $$
 
 Wartość przyspieszenia grawitacyjnego jest określona wzorem:
 
-$$ g = \frac{4 \pi^2}{a} = 10,1 \frac{m}{s^2} $$
+$$ g = \frac{4 \pi^2}{a} = 10,1 \unit{\frac{m}{s^2}}$$
 
 Wartość niepewności współczynnika nachylenia $a$:
 
-$$ u(a) = \sqrt{ \frac{S^2}{(n - 1)\sum x_i^2} } = 0,056 [\frac{s^2}{m}]$$
+$$ u(a) = \sqrt{ \frac{S^2}{(n - 1)\sum x_i^2} } = 0,056 \unit{[\frac{s^2}{m}]}$$
 
 Wartość niepewności przyspieszenia grawitacyjnego $g$:
 
-$$ u(g) = \vert - \frac{4 \pi^2}{a^2} u(a) \vert = 0,14 [\frac{m}{s^2}]$$
+$$ u(g) = \vert - \frac{4 \pi^2}{a^2} u(a) \vert = 0,14 \unit{[\frac{m}{s^2}]}$$
 
-$$ U(g) = k \cdot u(g) = 0,28 [\frac{m}{s^2}]$$
+$$ U(g) = k \cdot u(g) = 0,28 \unit{[\frac{m}{s^2}]}$$
 
 Uzyskana wartość nie mieści się w niepewności zwykłej, ani rozszerzonej:
 
-$$ \vert g - g_{krk} \vert = 10,1 \frac{m}{s^2} - 9,811 \frac{m}{s^2} = 0,289 $$
+$$ \vert g - g_{krk} \vert = 10,1 \unit{\frac{m}{s^2}} - 9,811 \unit{\frac{m}{s^2}} = 0,289 \unit{\frac{m}{s^2}}$$
 
 \section{Wnioski}
 
