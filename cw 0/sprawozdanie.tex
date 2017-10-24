@@ -146,8 +146,10 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 
 \subsection{Niepewność pomiaru okresu}
 
-Niepewność pomiaru okresu obliczamy metodą typu A, czyli jako estymator odchylenia standardowego wartości średniej:
+Niepewność pomiaru okresu obliczamy metodą typu A, czyli jako estymator odchylenia standardowego wartości średniej. Średnią długość okresu wahadła wyznaczamy za pomocą średniej arytmetycznej.
 
+
+$n$-ilość pomiarów $T$-okres wahadła $\overline{T}$ - średni okres wahadła
 $$u(T)\equiv s_{\overline{T}} = \sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = \sqrt{\frac{\sum{(T_i-1,65 \unit{s})^2}}{90}} = 0,31 \unit{[s]} $$
 
 \subsection{Niepewność pomiaru długości wahadła}
@@ -159,8 +161,9 @@ $$u(l)=1 \unit{[mm]}$$
 $$g = \frac{4\pi^2l}{T^2} = 7,02 \unit{\frac{m}{s^2}}$$
 
 \subsection{Niepewność złożona}
+Niepewność złożoną obliczamy za pomocą prawa przenoszenia niepewności, ponieważ przyspieszenie ziemskie zostało wyznaczone pośrednio:
 
-$$u_c(g)=\sqrt{\frac{64\pi^4 l^2}{T^6}u(T)^2+\frac{16\pi^4}{T^4}u(l)^2} =  0,37 \unit{[\frac{m}{s^2}]}$$
+$$u_c(g)=\sqrt{(\frac{\delta g}{\delta T})^2 u(T)^2+(\frac{\delta g}{\delta l})^2 u(l)^2}=\sqrt{\frac{64\pi^4 l^2}{T^6}u(T)^2+\frac{16\pi^4}{T^4}u(l)^2} =  0,37 \unit{[\frac{m}{s^2}]}$$
 
 \subsection{Niepewność rozszerzona}
 
@@ -192,7 +195,7 @@ $$\vert g - g_{krk} \vert = 2,791 \unit{\frac{m}{s^2}}$$
 
 Do punktów doswiadczalnych dopasowano prostą $y = a x$ metodą najmniejszych kwadratów:
 
-$$ a = \frac{\sum l_i T_i}{\sum l_i^2} = 3,91 $$
+$$ a = \frac{\sum l_i T_i}{\sum l_i^2} = 3,91 \unit{[\frac{m}{s^2}]} $$
 
 Wartość przyspieszenia grawitacyjnego jest określona wzorem:
 
@@ -216,7 +219,7 @@ $$ \vert g - g_{krk} \vert = 10,1 \unit{\frac{m}{s^2}} - 9,811 \unit{\frac{m}{s^
 
 Dane zebrane podczas pierwszej części doświadczenia (okresy dla stałej długości wahadła) zawierają bardzo różne wartości co wskazuje na niedokładne bądź błędne przeprowadzenie badania. Zasadniczo tylko pierwszy pomiar z serii mieści się w spodziewanym zakresie.
 
-Dane zebrane podczas drugiej części doświadczenia pozwoliły wyznaczyć wartość przyspieszenia grawitacyjnego dużo bliższą wartości tabelarycznej. Jednak i ta wartość (minimalnie) nie zmieściła się w przedziale niepewności rozszerzonej
+Dane zebrane podczas drugiej części doświadczenia pozwoliły wyznaczyć wartość przyspieszenia grawitacyjnego dużo bliższą wartości tabelarycznej. Jednak i ta wartość (minimalnie) nie zmieściła się w przedziale niepewności rozszerzonej.
 
 
 \end{document}
