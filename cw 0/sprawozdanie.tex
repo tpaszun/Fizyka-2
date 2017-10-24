@@ -35,13 +35,27 @@
 
 Celem ćwiczenia jest zapoznanie się z metodami opracowania danych pomiarowych oraz szacowania niepewności pomiarów. Cel jest realizowany podczas próby wyznaczenia przyspieszenia grawitacyjnego Ziemi przy pomocy wahadła matematycznego.
 
-\section{Wstęp teoretyczny - wahadło matematyczne}
+\section{Wstęp teoretyczny}
+
+\subsection{Wahadło matematyczne}
 
 Wahadło matematyczne to masa punktowa $m$ zawieszona na nierozciągliwej i nieważkiej nici o długości $l$ poruszająca się w jednorodnym polu grawitacyjnym. Podczas ćwiczenia użyjemy metalowego ciężarka zawieszonego na cienkiej lince, które stanowią dobre przyblizenie takiego układu.
 
 Wprawiając wahadło w ruch poprzez wychylenie o niewielkie kąty $\theta$ możemy zastosować przybliżenie $\sin\theta\approx\theta$. W takim przypadku z uproszczonego równania ruchu wahadła otrzymamy zależność: $$T = 2\pi\sqrt{\frac{l}{g}}$$gdzie $T$ to okres drgań wahadła, $l$ to długość nici, a $g$ jest przyspieszeniem grawitacyjnym. Po przekształceniu równania otrzymujemy wzór na przyspieszenie grawitacyjne: $$g = \frac{4\pi^2l}{T^2}$$
 
+\subsection{Opracowanie danych pomiarowych, wyznaczanie niepewności pomiarów}
+
+Przy \textbf{błędzie przypadkowym} obserwujemy rozrzut wyników pomiaru wokół wartości rzeczywistej. Z \textbf{błędem systematycznym} mamy do czynienia, gdy przy powtarzaniu pomiaru występuje ta sama różnica między wartościami zmierzonymi a wartością rzeczywistą, natomiast rozrzut wyników poszczególnych pomiarów jest niewielki. O \textbf{błędzie grubym} mówimy, gdy różnica między wynikiem pomiaru i wartością rzeczywistą jest duża lub drastycznie duża. Błąd gruby pojawia się na skutek nieumiejętności użycia danego przyrządu, pomyłek przy odczytywaniu i zapisie wyników itp.
+
+Niepewność pomiaru jest związanym z rezultatem pomiaru parametrem, charakteryzującym rozrzut wyników, który można w uzasadniony sposób przypisać wartości mierzonej. W przypadku \textbf{niepewności granicznej} próbujemy ustalić przedział w którym mieszczą się wszystkie wyniki pomiaru. \textbf{Niepewność standardowa} jest oszacowaniem odchylenia standardowego. \textbf{Niepewnością względną} nazywamy stosunek niepewności (bezwzględnej) do wielkości mierzonej.
+
+W przypadku pomiarów, w których występuje błąd przypadkowy jako wynik pomiaru przyjmujemy wartość średniej arytmetycznej: $$ x \equiv \overline{x} =  \frac{1}{n}\sum{x_i}$$ Niepewność pomiaru (typu A) $u(x)$ utożsamiamy z estymatorem odchylenia standardowego średniej: $$u(x) = \sqrt{\frac{\sum{(x_i-\overline{x})^2}}{n(n-1)}} $$
+
+Ocena typu B najczęściej dotyczy określenia niepewności wynikających ze skończonej dokładności przyrządów. 
+
 \section{Opis doświadczenia}
+
+Doświadczenie składa się z dwóch części. W pierwszej mierzymy wielokrotnie czasy okresów wahadła dla stałej długości i na podstawie średniego okresu wyznaczamy przyspieszenie grawitacyjne. W drugiej mierzymy czasy okresów wahadła dla różnych długości i przyspieszenie grawitacyjne wyznaczamy metodą regresji liniowej.
 
 \subsection{Stała długość wahadła}
 
@@ -149,8 +163,9 @@ W drugiej części doświadczenia zebrane zostały pomiary czasów okresów waha
 Niepewność pomiaru okresu obliczamy metodą typu A, czyli jako estymator odchylenia standardowego wartości średniej. Średnią długość okresu wahadła wyznaczamy za pomocą średniej arytmetycznej.
 
 
-$n$-ilość pomiarów $T$-okres wahadła $\overline{T}$ - średni okres wahadła
 $$u(T)\equiv s_{\overline{T}} = \sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = \sqrt{\frac{\sum{(T_i-1,65 \unit{s})^2}}{90}} = 0,31 \unit{[s]} $$
+
+gdzie: $n$ - ilość pomiarów, $T$ - okres wahadła, $\overline{T}$ - średni okres wahadła.
 
 \subsection{Niepewność pomiaru długości wahadła}
 Pomiar długości wahadła był wykonywany za pomocą linijki z działką o dokładności $1 \unit{mm}$, więc:
@@ -221,5 +236,6 @@ Dane zebrane podczas pierwszej części doświadczenia (okresy dla stałej dług
 
 Dane zebrane podczas drugiej części doświadczenia pozwoliły wyznaczyć wartość przyspieszenia grawitacyjnego dużo bliższą wartości tabelarycznej. Jednak i ta wartość (minimalnie) nie zmieściła się w przedziale niepewności rozszerzonej.
 
+Podczas opracowania wyników dzięki poznanym typom błędów byliśmy w stanie wychwycić błędy grube w uzyskanych wynikach. Poznaliśmy również metody szacowania niepewności, dzięki którym (przy poprawnie wykonanym doświadczeniu) bylibyśmy w stanie określić jak daleko od uzyskanych wartości znajduje się wartość rzeczywista.
 
 \end{document}
