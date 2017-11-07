@@ -89,13 +89,13 @@ Wzór na moment bezwładności pierścienia względem osi obrotu przechodzącej 
 		\begin{tabular}{@{}c@{}}Wartość  \end{tabular} &
 		\begin{tabular}{@{}c@{}}Niepewność \end{tabular}\\
 		\midrule
-		$m$ [$\unit{g}$]  &  1360   &  1    \\
+		$m$ [$\unit{g}$]     &  1360   &  1    \\
 		$D_w$ [$\unit{mm}$]  &  249   &  1    \\
 		$D_z$ [$\unit{mm}$]  &  279  &  1    \\
 		$R_w$ [$\unit{mm}$]  &  124,5  &  1    \\
 		$R_z$ [$\unit{mm}$]  &  139,5  &  1    \\
-		$e$ [$\unit{mm}$]  &  9,7  &  0,05    \\
-		$a$ [$\unit{mm}$]  &  129,8  &  0,05    \\
+		$e$ [$\unit{mm}$]    &  9,7  &  0,05    \\
+		$a$ [$\unit{mm}$]    &  129,8  &  0,05    \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -169,6 +169,39 @@ Wzór na moment bezwładności pierścienia względem osi obrotu przechodzącej 
 \newpage
 
 \section{Opracowanie wyników}
+\subsection{Moment bezwładności $I_0$}
+Moment bezwładności $I_0$ względem rzeczywistej osi obrotu obliczamy ze wzoru:
+$$T=2\pi\sqrt{\frac{I_0}{mga}}$$
+$$I_0=\frac{T^2mga}{4\pi^2}$$
+$$I_0=0,07665 [\unit{kg\cdot m^2}]$$
+\subsection{Moment bezwładności $I_s$}
+Z twierdzenia Steinera wynika wzór na $I_0$:
+$$I_0=I_S+ma^2$$
+Mając obliczony moment bezwładności $I_0$ możemy obliczyć $I_S$ ze wzoru:
+$$I_S=I_0-ma^2$$
+$$I_S = 0,02868[\unit{kg\cdot m^2}]$$
+
+\subsection{Moment bezwładności względem osi przechodzącej przez środek masy}
+Moment bezwładności względem osi przechodzącej przez środek masy dla pręta możemy wyznaczyć ze wzoru:
+$$I_s^{(geom)}=\frac{ml^2}{12}$$
+$$I_S^{(geom)}=0,02987[\unit{kg\cdot m^2}]$$
+\subsection{Niepewności pomiaru}
+Niepewność okresu typu A:
+$$\overline{T}=\frac{\sum{T_i}}{n}=1,318[\unit{s}]$$
+$$u(T)=\sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}}$$
+$$u(T)=0,00000167[\unit{s}]$$
+$n$-ilość pomiarów,
+$\overline{T}$-średni okres drgań
+\newline
+\newline
+Waga, na której pręt był ważony ma dokładnośc do 1 [$\unit{g}$], więc 
+$$u(m)=1[\unit{g}]$$
+\newline
+Pręt był mierzony za pomocą linijki, więc:
+$$u(l)=1[\unit{mm}]$$
+\newline
+$a = l/2-b$, więc:
+$$u(a)=0,5[\unit{mm}]$$
 \section{Wnioski}
 
 
