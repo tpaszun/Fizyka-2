@@ -45,12 +45,17 @@ Zasada dynamiki dla ruchu obrotowego wyrażona jest wzorem $$I\varepsilon = M$$ 
 \subsection{Moment bezwładności na podstawie okresu drgań}
 Dla wahadła fizycznego moment siły powstaje pod wpływem siły ciężkości. Dla wychylenia $\theta$ jest równy $$M = m g a \sin\theta$$ gdzie $a$ - odległość środka masy $S$ od osi obrotu $O$. Zatem równanie ruchu wahadła można zapisać jako $$ I_0 \frac{d^2\theta}{dt^2} = -m g a \sin \theta$$ gdzie $I_0$ - moment bezwładności względem osi obrotu przechodzącej przez punkt zawieszenia $O$. Jeżeli ograniczyć ruch do małych kątów wychylenia, to sinus kąta można zastąpić samym kątem w mierze łukowej, czyli $\sin\theta \approx \theta$. Przyjmując częstość określoną wzorem $\omega_0^2 = \frac{mga}{I_0}$  równanie ruchu przyjmuje postać równania oscylatora harmonicznego $$ \frac{d^2\theta}{dt^2}+\omega_0^2\theta(t) = 0$$. Okres drgań związany z częstością wynosi $$ T = 2 \pi \sqrt{\frac{I_0}{mga}} $$.
 
-Przekształcając wzór otrzymujemy wzór na moment bezwładności $$ I_0 = (\frac{T}{2\pi})^2mga = \frac{mgaT^2}{4\pi^2}$$
+Przekształcając wzór otrzymujemy wzór na moment bezwładności $$ I_0 = \left( \frac{T}{2\pi} \right)^2mga = \frac{mgaT^2}{4\pi^2}$$
 
 \subsection{Moment bezwładności na podstawie prawa Steinera}
 
 Dla wyznaczenia momentu bezwładności $I_S$ względem równoległej osi przechodzącej przez środek masy możemy posłużyć się związkiem między $I_0$ i $I_S$ znanym jako twierdzenie Steinera: 
 $$ I_0 = I_S + ma^2$$
+
+Po przekształceniu wzór na moment bezwładności względem osi przechodzącej przez środek ciężkości ma postać:
+
+$$ I_S = I_0 - ma^2 $$
+
 
 Wzór na moment bezwładności cienkiego pręta względem osi obrotu umieszczonej na końcu pręta to $$ I = \frac{1}{3}mL^2 $$ gdzie $L$ - długość pręta.
 
@@ -179,7 +184,150 @@ Pomiary okresu drgań brył wprawionych w ruch wahadłowy o niewielkim wychyleni
 
 \newpage
 
-\section{Opracowanie wyników}
+\section{Opracowanie wyników dla pręta}
+
+\subsection{Moment bezwładności $I_0$}
+
+Wartość momentu bezwładności względem osi obrotu $O$:
+
+$$ I_0 = \frac{mgaT^2}{4\pi^2} = 0,07665 \unit{[kg \cdot m^2]} $$
+
+\subsection{Moment bezwładności $I_S$}
+Wartość momentu bezwładności względem środka masy:
+
+$$ I_S = I_0 - ma^2 = 0,0287 \unit{[kg \cdot m^2]} $$
+
+\subsection{Moment bezwładności względem osi przechodzącej przez środek masy}
+
+Wartość momentu bezwładności względem osi przechodzącej przez środek masy wyliczona z wartości geometrycznych:
+
+$$ I_S^{(geom)} = \frac{1}{12}ml^2 = 0,02987 \unit{[kg \cdot m^2]}$$
+
+\subsection{Niepewności pomiaru}
+
+Niepewność pomiaru masy (ważonej na wadze o dokładności $1 \unit{g}$):
+
+$$ u(m) = 0,001 \unit{kg} $$
+
+Niepewność pomiaru długości pręta (mieżonego linijką o dokładności $1 \unit{mm}$):
+
+$$ u(l) = 0,001 \unit{m} $$
+
+Niepewność pomiaru odległości $a = l/2 - b$:
+
+$$ u(a) = 0,0005 \unit{m} $$
+
+Niepewność typu A pomiaru okresu $T$:
+
+$$\overline{T}=\frac{\sum{T_i}}{n}=1,318 \unit{[s]}$$
+$$u(T)=\sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = 0,00000167\unit{[s]}$$
+
+gdzie: $n$ - ilość pomiarów, $\overline{T}$ - średni okres drgań.
+
+\subsection{Niepewność złożona}
+
+Niepewność złożona momentu bezwładności $I_0$:
+
+$$ \frac{u(I_0)}{I_0} = \sqrt{ \left[ \frac{u(m)}{m} \right]^2 + \left[ \frac{u(a)}{a} \right]^2 + \left[ 2 \frac{u(T_0)}{T_0} \right]^2} $$
+
+$$ u(I_0) = 0,000306 \unit{kg \cdot m^2} $$
+
+Niepewność złożona momentu bezwładności $I_S$:
+
+$$ u(I_S) = \sqrt{ \left[ u(I_0) \right]^2 + \left[ a^2 \cdot u(m) \right]^2 + \left[-2 a m \cdot u(m) \right]^2 } $$
+
+$$ u(I_S) = 0,000475 \unit{kg \cdot m^2} $$
+
+Niepewność złożona momentu bezwładności obliczonego geometrycznie $I_S^{(geom)}$:
+
+$$ \frac{u(I_S^{(geom)})}{I_S^{(geom)}} = \sqrt{\left[ \frac{u(m)}{m} \right]^2 + \left[ 2\frac{u(l)}{l} \right]^2 } $$
+
+$$ u(I_S^{(geom)}) = 0,000012 \unit{kg \cdot m^2} $$
+
+
+\subsection{Sprawdzenie zgodności wyników}
+Wyniki nie są zgodne, gdyż wartość:
+
+$$ \frac{ \left| I_S - I_S^{(geom)} \right| }{\sqrt{u^2(I_S) + u^2(I_S^{(geom)})}} = 2,49 $$
+
+jest większa od $k = 2$.
+
+\section{Opracowanie wyników dla pierścienia}
+
+\subsection{Moment bezwładności $I_0$}
+
+Wartość momentu bezwładności względem osi obrotu $O$:
+
+$$ I_0 = \frac{mgaT^2}{4\pi^2} = 0,0469 \unit{[kg \cdot m^2]} $$
+
+\subsection{Moment bezwładności $I_S$}
+
+Wartość momentu bezwładności względem środka masy:
+
+$$ I_S = I_0 - ma^2 = 0,024 \unit{[kg \cdot m^2]} $$
+
+\subsection{Moment bezwładności względem osi przechodzącej przez środek masy}
+
+Wartość momentu bezwładności względem osi przechodzącej przez środek masy wyliczona z wartości geometrycznych:
+
+$$ I_S^{(geom)} = \frac{1}{12}ml^2 = 0,0238 \unit{[kg \cdot m^2]}$$
+
+\subsection{Niepewności pomiaru}
+
+Niepewność pomiaru masy (ważonej na wadze o dokładności $1 \unit{g}$):
+
+$$ u(m) = 0,001 \unit{kg} $$
+
+Niepewność pomiaru promienia $R = \frac{D_z}{2}$ (mierzonego linijką o dokładności $1 \unit{mm}$):
+
+$$ u(R) = 0,0005 \unit{m} $$
+
+Niepewność pomiaru promienia $r = \frac{D_w}{2}$ (mierzonego linijką o dokładności $1 \unit{mm}$):
+
+$$ u(r) = 0,0005 \unit{m} $$
+
+Niepewność pomiaru odległości $a$ (mierzonej suwmiarką o dokładności $0,05 \unit{mm}$):
+
+$$u(a) = 0,00005 \unit{m} $$
+
+Niepewność typu A pomiaru okresu $T$:
+
+$$\overline{T}=\frac{\sum{T_i}}{n}=1,0337 \unit{[s]}$$
+$$u(T)=\sqrt{\frac{\sum{(T_i-\overline{T})^2}}{n(n-1)}} = 0,00000016 \unit{[s]}$$
+
+gdzie: $n$ - ilość pomiarów, $\overline{T}$ - średni okres drgań.
+
+\subsection{Niepewność złożona}
+
+Niepewność złożona momentu bezwładności $I_0$:
+
+$$ \frac{u(I_0)}{I_0} = \sqrt{ \left[ \frac{u(m)}{m} \right]^2 + \left[ \frac{u(a)}{a} \right]^2 + \left[ 2 \frac{u(T_0)}{T_0} \right]^2} $$
+
+$$ u(I_0) = 0,0000389 \unit{kg \cdot m^2} $$
+
+Niepewność złożona momentu bezwładności $I_S$:
+
+$$ u(I_S) = \sqrt{ \left[ u(I_0) \right]^2 + \left[ a^2 \cdot u(m) \right]^2 + \left[-2 a m \cdot u(m) \right]^2 } $$
+
+$$ u(I_S) = 0,000356 \unit{kg \cdot m^2} $$
+
+
+Niepewność złożona momentu bezwładności obliczonego geometrycznie $I_S^{(geom)}$:
+
+$$ u(I_S^{(geom)}) = \sqrt{ \left[ \frac{R^2 + r^2}{2} u(m) \right]^2 + \left[ mRu(R) \right]^2 + \left[ mru(r) \right]^2 } $$
+
+
+$$ u(I_S^{(geom)}) = 0,000128 \unit{kg \cdot m^2} $$
+
+\subsection{Sprawdzenie zgodności wyników}
+
+Wyniki są zgodne, gdyż wartość:
+
+$$ \frac{ \left| I_S - I_S^{(geom)} \right| }{\sqrt{u^2(I_S) + u^2(I_S^{(geom)})}} = 0,49 $$
+
+jest większa od $k = 2$.
+
+
 \section{Wnioski}
 
 
