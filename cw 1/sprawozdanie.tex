@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+\begin{document}
+
+\newcommand{\unit}[1]{\thinspace \mathrm{#1}}
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.5}
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	EAIiIB & \multicolumn{2}{|c|}{Piotr Morawiecki, Tymoteusz Paszun} & Rok II & {Grupa 3a} & {Zespół 6} \\
+	\hline
+	\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: Wahadła fizyczne \end{tabular}} & 
+	\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: 0 \end{tabular}} \\
+	\hline
+	\begin{tabular}{@{}c@{}}Data wykonania:\\26.10.2017r.\end{tabular} & \begin{tabular}{@{}c@{}}Data oddania:\\8.11.2017r.\end{tabular} & 
+	\begin{tabular}{c}Zwrot do poprawki:\\\phantom{data} \end{tabular} & \begin{tabular}{c}Data oddania:\\\phantom{data}\end{tabular} &
+	\begin{tabular}{@{}c@{}}Data zaliczenia:\\\phantom{data}\end{tabular} & \begin{tabular}{c}Ocena:\\\phantom{ocena}\end{tabular} \\[4ex]
+	\hline
+\end{tabular}
+\egroup
+\end{center}
+
+
+\section{Cel ćwiczenia}
+
+\section{Wstęp teoretyczny}
+
+\subsection{Wahadło fizyczne}
+
+\section{Opis doświadczenia}
+
+\section{Wyniki pomiarów}
+
+\begin{table}[!htbp]
+\caption{Pomiary dla wahadła o długości $l=485 \unit{mm}$, czas mierzony co 20 okresów}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rcccc@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Lp.\end{tabular} &
+\begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 20 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular}\\
+\midrule
+1  &  20   &  27,52   &  27,52  &  1,38  \\
+2  &  40   &  62,36   &  34,84  &  1,74  \\
+3  &  60   &  98,67   &  36,31  &  1,82  \\
+4  &  80   &  133,45  &  34,78  &  1,74  \\
+5  &  100  &  168,08  &  34,63  &  1,73  \\
+6  &  120  &  202,58  &  34,50  &  1,73  \\
+7  &  140  &  235,92  &  33,34  &  1,67  \\
+8  &  160  &  275,92  &  40,00  &  2,00  \\
+9  &  180  &  311,98  &  36,06  &  1,80  \\
+10 &  200  &  349,08  &  37,10  &  1,86  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!htbp]
+\caption{Pomiary dla wahadła o długości $l=485 \unit{mm}$, czas mierzony co 30 okresów}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rcccc@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Lp.\end{tabular} &
+\begin{tabular}{@{}c@{}}Liczba okresów $k$\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t$ dla $k$ okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas $t'$ dla 30 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular}\\
+\midrule
+1  &  30   &  40,11   &  40,11  &  1,34  \\
+2  &  60   &  90,39   &  50,28  &  1,68  \\
+3  &  90   &  144,45  &  54,06  &  1,80  \\
+4  &  120  &  193,17  &  48,72  &  1,62  \\
+5  &  150  &  245,76  &  52,59  &  1,75  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!htbp]
+\caption{Pomiary dla zmiennej długości wahadła}
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{@{}rccrr@{}}
+\\
+\toprule
+\begin{tabular}{@{}c@{}}Długość wahadła [$\unit{mm}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 20 okresów [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Czas 1 okresu [$\unit{s}$]\end{tabular} &
+\begin{tabular}{@{}c@{}}Wartość $g$ [$\unit{\frac{m}{s^2}}$]\end{tabular} \\
+\midrule
+
+135  &  14,23  &  0,71  &  10,53  \\
+175  &  16,10  &  0,81   &  10,66  \\
+215  &  18,40  &  0,92    &  10,03  \\
+255  &  19,09  &  0,96  &  11,05  \\
+295  &  20,56  &  1,03   &  11,02  \\
+335  &  23,00  &  1,15    &  10,00  \\
+375  &  24,81  &  1,24  &  9,62  \\
+415  &  25,59  &  1,28  &  10,00  \\
+455  &  26,75  &  1,34  &  10,04  \\
+485  &  27,73  &  1,39  &  9,96   \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section{Opracowanie wyników}
+\section{Wnioski}
+
+
+\end{document}
