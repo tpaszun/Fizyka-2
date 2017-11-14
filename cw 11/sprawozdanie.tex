@@ -19,10 +19,10 @@
 	\hline
 	EAIiIB & \multicolumn{2}{|c|}{Piotr Morawiecki, Tymoteusz Paszun} & Rok II & {Grupa 3a} & {Zespół 6} \\
 	\hline
-	\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: Moduł Younga \end{tabular}} & 
+	\multicolumn{3}{|c|}{\begin{tabular}{c}Temat: Moduł Younga \end{tabular}} &
 	\multicolumn{3}{|c|}{\begin{tabular}{c}Numer ćwiczenia: 11 \end{tabular}} \\
 	\hline
-	\begin{tabular}{@{}c@{}}Data wykonania:\\8.11.2017r.\end{tabular} & \begin{tabular}{@{}c@{}}Data oddania:\\15.11.2017r.\end{tabular} & 
+	\begin{tabular}{@{}c@{}}Data wykonania:\\8.11.2017r.\end{tabular} & \begin{tabular}{@{}c@{}}Data oddania:\\15.11.2017r.\end{tabular} &
 	\begin{tabular}{c}Zwrot do poprawki:\\\phantom{data} \end{tabular} & \begin{tabular}{c}Data oddania:\\\phantom{data}\end{tabular} &
 	\begin{tabular}{@{}c@{}}Data zaliczenia:\\\phantom{data}\end{tabular} & \begin{tabular}{c}Ocena:\\\phantom{ocena}\end{tabular} \\[4ex]
 	\hline
@@ -33,24 +33,44 @@
 
 \section{Cel ćwiczenia}
 
-Celem ćwiczenia jest wyznaczenie modułu Younga metodą statyczną przy pomocy pomiaru wydłużenia drutu obciążonego stałą siłą. 
+Celem ćwiczenia jest wyznaczenie modułu Younga metodą statyczną przy pomocy pomiaru wydłużenia drutu wykonanego ze stali lub mosiądzu, obciążonego stałą siłą.
 
 \section{Wstęp teoretyczny}
 
-
+Prawo Hooke'a określa zależność odkształcenia od naprężenia. Według tego prawa odkształcenie ciała pod wpływem działającej na nie siły jest proporcjonalne do tej siły. Zależność ta pozostaje prawdziwa tylko dla niezbyt dużych odkształceń, nie przekraczających granicy Hooke'a, czyli maksymalnego naprężenia, przy którym zachodzące odkształcenie jest proporcjonalne do wywołującego je naprężenia. Odkształcenie opisane jest wzorem:
 $$ \Delta l = \frac{Fl}{ES} $$
 
+gdzie $ F $ - naprężenie, $ l $ - długość ciała, $ E $ - moduł Younga, $ S $ - pole przekroju poprzecznego ciała.
+
+Moduł Younga ($E$) to współczynnik sprężystości podłużnej. Określa on własności sprężyste ciała stałego, charakteryzując podatność materiału na odkształcenia podłużne: rozciąganie, ściskanie, zgniatanie. Jego jednostką jest pascal ($\unit{Pa}$). Możemy go obliczyć znając naprężenie $\sigma$ występujące w danym obszarze ciała oraz względne odształcenie liniowe $\varepsilon$, co opisuje wzór:
+
+
 $$ \sigma = E \varepsilon $$
+gdzie:
+$$ \varepsilon = \frac{\delta}{l}$$
+$$\sigma = \frac{F}{S}$$
+Wartość modułu Younga mówi nam jak duże naprężenie należaoby przyłożyć, aby zwiększyć dwukrotnie długość drutu. Taka zależność nie ma jednak odwzierciedlenia w praktyce, ponieważ już przy mniejszych naprężeniach ciało ulega nieodwracalnym zmianom.
 
-$$ E = \frac{4l}{\pi d^2 a} $$
-
-\section{Opis doświadczenia}
+Zgodnie z prawem Hooke'a zależność $\Delta l(F)$ jest liniowa, dlatego można ją opisać jako: $\Delta l(F)=aF+b$. Współczynnik kierunkowy to tangens kąta nachylenia prostej do osi OX, co opisujemy jako $a=\frac{\Delta l}{mg}$. Jest to równoznaczne z $a=\frac{l}{ES}$ (na podstawie Prawa Hooke'a), więc
+$E=\frac{l}{aS}$. Podstawiając do równania $S=\frac{\pi d^2}{4}$ otrzymujemy wzór roboczy na moduł Younga:
+$$E = \frac{4l}{\pi d^2 a}$$
+Wartość współczynnika $a$ oraz jego niepewność $u(a)$ wyznaczymy korzystając z regresji liniowej.
+\section{Wykonanie ćwiczenia}
+\begin{enumerate}
+	\item Zmierzenie długości drutu, który zostannie użyty w doświadczeniu, za pomocą przymiaru przymocowanego do statywu.
+	\item Zamontowanie drutu w statywie i obciążenie szalki odważnikami, w celu naciągnięcia drutu. Pomiar średnicy drutu za pomocą śruby mikrometrycznej.
+	\item Opróżnienie szlki z odważników, zwolnienie blokady belki pomiarowej. Regulacja naprężenia drutu, tak aby czujnik mikrometryczny został wyzerowany.
+	\item Obciążanie szalki przez dokładanie kolejnych odważników, które zostały kolejno zważone. Notowanie w tabeli sumarycznej masy odważników i wydłużenia drutu. Dla lepszej dokładności pomiary zostały wykonane przy dokładaniu odważników i przy ich zdejmowaniu.
+	\item Ponowne wykonanie poprzednich kroków dla drutu wykonanego z innego metalu.
+\end{enumerate}
 
 \begin{figure}[!htp]
 \centerline{\includegraphics[scale=0.35]{przyrzad.png}}
 \caption{Przyrząd pomiarowy}
 \label{fig:tl}
 \end{figure}
+
+\newpage
 
 \section{Wyniki pomiarów}
 
@@ -69,7 +89,7 @@ Zmierzona długość drutu: $ l = 1065 \unit{mm} $.
 \begin{tabular}{@{}c@{}}Masa odważników $[\unit{kg}]$\end{tabular} &
 \begin{tabular}{@{}c@{}}Siła $F \unit{[N]}$\end{tabular} &
 \begin{tabular}{@{}c@{}}Wskazanie czujnika przy \\ dodawaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy 
+\begin{tabular}{@{}c@{}}Wskazanie czujnika przy
 \\ odejmowaniu obciążenia\end{tabular} &
 \begin{tabular}{@{}c@{}}$\Delta l \unit{[mm]}$\end{tabular}\\
 \midrule
@@ -102,7 +122,7 @@ Zmierzona długość drutu: $ l = 1070,5 \unit{mm} $.
 \begin{tabular}{@{}c@{}}Masa odważników $[\unit{kg}]$\end{tabular} &
 \begin{tabular}{@{}c@{}}Siła $F \unit{[N]}$\end{tabular} &
 \begin{tabular}{@{}c@{}}Wskazanie czujnika przy \\ dodawaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy 
+\begin{tabular}{@{}c@{}}Wskazanie czujnika przy
 \\ odejmowaniu obciążenia\end{tabular} &
 \begin{tabular}{@{}c@{}}$\Delta l \unit{[mm]}$\end{tabular}\\
 \midrule
@@ -116,7 +136,11 @@ Zmierzona długość drutu: $ l = 1070,5 \unit{mm} $.
 \end{tabular}
 \end{table}
 
+\newpage
+
 \section{Wykresy}
+
+Na wykresach czerwonymi punktami oznaczone zostały uzyskane wyniki pomiarów. Niebieska linia to prosta regresji liniowej. Pomiar odstający od prostej regresji liniowej został oznaczony ciemniejszym okręgiem.
 
 \begin{figure}[!htp]
 \centerline{\includegraphics[scale=0.65]{steel_wire_first_point_marked.png}}
@@ -130,6 +154,8 @@ Zmierzona długość drutu: $ l = 1070,5 \unit{mm} $.
 \label{fig:tl}
 \end{figure}
 
+\newpage
+
 \section{Opracowanie wyników}
 
 \subsection{Analiza błędów}
@@ -141,6 +167,10 @@ W wynikach pomiarów dla drutu stalowego zauważyliśmy odstawanie pierwszego pu
 Niepewność pomiaru długości drutu (typu B) - wynika z zastosowania przymiaru o podziałce o dokładności $ 1 \unit{mm} $:
 
 $$ u(l) = \frac{1 \unit{mm}}{\sqrt{3}} = 0,577 \unit{mm} $$
+
+Niepewność pomiaru wydłużenia drutu (typu B) wynika z zastosowania miernika mikrometrycznego o dokładności $ 1 \unit{mm} $:
+
+$$ u(\Delta l) = \frac{0,01 \unit{mm}}{\sqrt{3}} = 0,00577 \unit{mm} $$
 
 Niepewność pomiaru średnicy drutu (typu B) - wynika z zastosowania śruby mikrometrycznej o dokładności $ 0,01 \unit{mm} $:
 
@@ -167,6 +197,10 @@ $$ \frac{u_c(E)}{E} = \sqrt{ \left( \frac{u(l)}{l} \right)^2 + \left( -2 \frac{u
 
 $$ u_c(E) =  E \cdot 0,016 = 2,826 \unit{[GPa]}$$
 
+Niepewność rozszerzona:
+
+$$ U(E) = k \cdot u_c(E) = 2 \cdot 2,826 \unit{[GPa]} = 5,652 \unit{[GPa]}$$
+
 
 \subsection{Moduł Younga dla drutu z mosiądzu}
 
@@ -180,8 +214,32 @@ $$ \frac{u_c(E)}{E} = \sqrt{ \left( \frac{u(l)}{l} \right)^2 + \left( -2 \frac{u
 
 $$ u_c(E) =  E \cdot 0,0146 = 1,556 \unit{[GPa]}$$
 
+Niepewność rozszerzona:
+
+$$ U(E) = k \cdot u_c(E) = 2 \cdot 1,556 \unit{[GPa]} = 3,112 \unit{[GPa]}$$
+
 \subsection{Ocena zgodności uzyskanych wyników}
 
+Różnica między obliczoną wartością modułu Younga dla stali ($ E = 176,61 \unit{GPa} $), a wartością tabelaryczną ($ E_0 = 200 \unit{GPa} $) wynosi:
+
+$$ \vert E - E_0 \vert = \vert 176,61 \unit{GPa} - 200 \unit{GPa} \vert = 23,39 \unit{GPa} $$
+
+Uzyskany wynik nie mieści się w niepewności rozszerzonej ($ U(E) = 5,652 \unit{[GPa]} $).
+
+
+Różnica między obliczoną wartością modułu Younga dla mosiądzu ($ E = 106,52 \unit{GPa} $), a wartością tabelaryczną ($ E_0 = 100 \unit{GPa} $) wynosi:
+
+$$ \vert E - E_0 \vert = \vert 106,52 \unit{GPa} - 100 \unit{GPa} \vert = 6,52 \unit{GPa} $$
+
+Uzyskany wynik nie mieści się w niepewności rozszerzonej ($ U(E) = 3,112 \unit{[GPa]} $).
+
+
 \section{Wnioski}
+
+Określenie poprawności wyników doświadczeń jest trudne ze względu na duży rozrzut wartości tabelarycznych modułu Younga wg różnych źródeł. Wynika to z zależności modułu Younga od składu stopu danego materiału.
+
+Wyliczony moduł Younga dla stali ($E = 176,61 \unit{GPa}$) znacznie odbiega od znalezionych wartości tabelarycznych ($E_0 = 190 - 220 \unit{GPa}$). Może być to spowodowane zużyciem badanego drutu.
+
+Moduł Younga wyznaczony dla mosiądzu ($ E = 106,52 \unit{GPa} $) odbiega od wartości tabelarycznej podanej w opisie ćwiczenia, jednak mieści się w zakresie wartości tabelarycznych podanych w innych źródłach ($ E_0 = 103 - 124 \unit{GPa} $).
 
 \end{document}
