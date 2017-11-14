@@ -33,16 +33,39 @@
 
 \section{Cel ćwiczenia}
 
-Celem ćwiczenia jest wyznaczenie modułu Younga metodą statyczną przy pomocy pomiaru wydłużenia drutu obciążonego stałą siłą. 
+Celem ćwiczenia jest wyznaczenie modułu Younga metodą statyczną przy pomocy pomiaru wydłużenia drutu wykonanego ze stali lub mosiądzu, obciążonego stałą siłą. 
 
 \section{Wstęp teoretyczny}
 
-
+Prawo Hooke'a określa zależność odkształcenia od naprężenia. Według tego prawa odkształcenie ciała pod wpływem działającej na nie siły jest proporcjonalne do tej siły. Zależność ta pozostaje prawdziwa tylko dla niezbyt dużych odkształceń, nie przekraczających granicy Hooke'a, czyli maksymalnego naprężenia, przy którym zachodzące odkształcenie jest proporcjonalne do wywołującego je naprężenia.
 $$ \Delta l = \frac{Fl}{ES} $$
+Moduł Younga ($E$) to współczynniki sprężystości podłużnej. Określa on własności sprężyste ciała stałego, charakteryzując podatność materiału na odkształcenia podłużne: rozciąganie, ściskanie, zgniatanie. Jego jednostką jest pascal. Możemy go obliczyć znając naprężenie $\sigma$ występujące w danym obszarze ciała oraz względne odształcenie liniowe $\epsilon$, co opisuje wzór:
 
+
+<<<<<<< HEAD
 $$ \sigma = E \varepsilon $$
+gdzie:
+$$ \varepsilon = \frac{\delta}{l}$$
+$$\sigma = \frac{F}{S}$$
+Wartość modułu Younga mówi nam jak duże naprężenie należaoby przyłożyć, aby zwiększyć dwukrotnie długość drutu. Taka zależność nie ma jednak odwzierciedlenia w praktyce, ponieważ już przy mniejszych naprężeniach ciało ulega nieodwracalnym zmianom.
+
+Zgodnie z prawem Hooke'a zależność $\Delta l(F)$ jest liniowa, dlatego można ją opisać jako: $\Delta l(F)=aF+b$. Współczynnik kierunkowy to tangens kąta nachylenia prostej do osi OX, co opisujemy jako $a=\frac{\Delta l}{mg}$. Jest to równoznaczne z $a=\frac{l}{ES}$ (na podstawie Prawa Hooke'a), więc
+$E=\frac{l}{aS}$. Podstawiając do równania $S=\frac{\pi d^2}{4}$ otrzymujemy wzór roboczy na moduł Younga:
+$$E = \frac{4l}{\pi d^2 a}$$
+Wartość współczynnika \textit{a} oraz jego niepewność \textit{u(a)} wyznaczymy korzystając z regresji liniowej.
+\section{Wykonanie ćwiczenia}
+\begin{enumerate}
+	\item Zmierzenie długości drutu, który zostannie użyty w doświadczeniu, za pomocą przymiaru przymocowanego do statywu.
+	\item Zamontowanie drutu w statywie i obciążenie szalki odważnikami, w celu naciągnięcia drutu. Pomiar średnicy drutu za pomocą śruby mikrometrycznej.
+	\item Opróżnienie szlki z odważników, zwolnienie blokadybelki pomiarowej. Regulacja naprężenia drutu, tak aby czujnik mikrometryczny został wyzerowany.
+	\item Obciążanie szalki przez dokładanie kolejnych odważników, które zostały kolejno zważone. Notowanie w tabeli sumaryczną masę odważników i wydłużenie drutu. Dla lepszej dokładności pomiary zostały wykonane przy dokładaniu odważników i przy ich zdejmowaniu.
+	\item Ponowne wykonanie poprzednich kroków dla drutu wykonanego z innego metalu.
+\end{enumerate}
+=======
+$$ E = \frac{4l}{\pi d^2 a} $$
 
 \section{Opis doświadczenia}
+>>>>>>> 934a56b2052e92efa581c1e5a0f6440d89c320ba
 
 \begin{figure}[!htp]
 \centerline{\includegraphics[scale=0.35]{przyrzad.png}}
@@ -122,6 +145,22 @@ $$ \sigma = E \varepsilon $$
 \end{figure}
 
 \section{Opracowanie wyników}
+
+stal
+
+$$ E = \frac{4l}{\pi d^2 a} = 176,61 \unit{GPa} $$
+
+$$ u(a) = ?$$
+
+$$ \frac{u_c(E)}{E} = \sqrt{ \left( \frac{u(l)}{l} \right)^2 + \left( -2 \frac{u(d)}{d} \right)^2 + \left(-\frac{u(a)}{a} \right)^2} = \sqrt{ \left( \frac{0,577}{1065} \right)^2 + \left( -2 \frac{0,00577}{0,71} \right)^2 + \left( - \frac{u(a)}{0,00001582471518} \right)^2} $$
+
+
+mosiądz
+
+$$ E = \frac{4l}{\pi d^2 a} = 106,52 \unit{GPa} $$
+
+
+
 
 \section{Wnioski}
 
