@@ -33,75 +33,66 @@
 
 \section{Cel ćwiczenia}
 
+Celem ćwiczenia jest wyznaczenie modułu Younga dla różnych materiałów na bazie pomiarów prędkości rozchodzenia się fal dźwiękowych (podłóżnych) w prętach.
+
 \section{Wstęp teoretyczny}
+
+
+
+
+$$ \lambda_i = \frac{2l}{i} $$
+
+$$ v_i = \lambda_if $$
+
+$$ E = \rho v^2 $$
+
 
 \section{Wykonanie ćwiczenia}
 
+\begin{itemize}
+	\item Pomiary wymiarów próbek badanych materiałów.
+	\item Pomiary masy próbek badanych materiałów.
+	\item Pomiary częstotliwości dźwieku wydawanego przez pręty po uderzeniu.
+\end{itemize}
+
 \section{Wyniki pomiarów}
 
-\subsection{Drut stalowy}
+\subsection{Wymiary oraz masa próbek}
 
-Zmierzona długość drutu: $ l = 1065 \unit{mm} $.
-Średnica drutu: $ d = \frac{0,715 \unit{mm} + 0,705 \unit{mm} + 0,71 \unit{mm}}{3} = 0,71 \unit{mm}$.
+
+
+\subsection{Pręt miedziany}
+
+Zmierzona długość pręta: $ l = 1802 \unit{mm} $.
 
 \begin{table}[!htbp]
-\caption{Pomiary wydłużenia dla drutu wykonanego ze stali}
+\caption{Pomiary częstotliwości dla pręta miedzianego}
 \centering
 \def\arraystretch{1.4}
-\begin{tabular}{@{}rcccc@{}}
+\begin{tabular}{@{}rcccccc@{}}
 \\
 \toprule
-\begin{tabular}{@{}c@{}}Masa odważników $[\unit{kg}]$\end{tabular} &
-\begin{tabular}{@{}c@{}}Siła $F \unit{[N]}$\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy \\ dodawaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy
-\\ odejmowaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}$\Delta l \unit{[mm]}$\end{tabular}\\
+\begin{tabular}{@{}c@{}}Harmoniczna\end{tabular} &
+\begin{tabular}{@{}c@{}}Częstotliwość \\ $\unit{[Hz]}$\end{tabular} &
+\begin{tabular}{@{}c@{}}Delta pomiaru \\ $\unit{[Hz]}$\end{tabular} &
+\begin{tabular}{@{}c@{}}Długość fali \\ $\unit{[mm]}$\end{tabular} &
+\begin{tabular}{@{}c@{}}Prędkość fali \\ $\unit{[\frac{m}{s}]}$\end{tabular} &
+\begin{tabular}{@{}c@{}}Moduł Younga \\ $\unit{[GPa]}$\end{tabular} \\
 \midrule
-0,957  &   9,38817  &  0,290  &  0,38  &  0,16750 \\
-1,968  &  19,30608  &  0,780  &  0,83  &  0,40250 \\
-2,956  &  28,99836  &  1,110  &  1,17  &  0,57000 \\
-3,951  &  38,75931  &  1,425  &  1,48  &  0,72625 \\
-4,918  &  48,24558  &  1,780  &  1,78  &  0,89000 \\
-5,946  &  58,33026  &  2,070  &  2,07  &  1,03500 \\
-6,928  &  67,96368  &  2,320  &  2,38  &  1,17500 \\
-7,961  &  78,09741  &  2,630  &  2,65  &  1,32000 \\
-8,989  &  88,18209  &  2,915  &  2,92  &  1,45875 \\
-9,972  &  97,82532  &  3,230  &        &  1,61500 \\
+$f_0$  &  1029,45  &  4,81  &  3604,00  & 3710,14 &  127,73 \\
+$f_1$  &  2060,90  &  2,35  &  1802,00  &  3713,74 & 127,98 \\
+$f_2$  &  3092,65  &  3,53  &  1201,33  &  3715,30 & 128,09 \\
+$f_3$  &  4123,45  &  3,53  &   901,00  &  3715,23 & 128,08 \\
+$f_4$  &  5155,80  &  3,53  &   720,80  &  3716,30 & 128,15 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Drut mosiężny}
+\subsection{Pręt stalowy}
 
-Zmierzona długość drutu: $ l = 1070,5 \unit{mm} $.
-Średnica drutu: $ d = \frac{0,79 \unit{mm} + 0,79 \unit{mm} + 0,795 \unit{mm}}{3} = 0,7917 \unit{mm}$.
+\subsection{Pręt z mosiądzu}
 
-\begin{table}[!htbp]
-\caption{Pomiary wydłużenia dla drutu wykonanego z mosiądzu}
-\centering
-\def\arraystretch{1.4}
-\begin{tabular}{@{}rcccc@{}}
-\\
-\toprule
-\begin{tabular}{@{}c@{}}Masa odważników $[\unit{kg}]$\end{tabular} &
-\begin{tabular}{@{}c@{}}Siła $F \unit{[N]}$\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy \\ dodawaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}Wskazanie czujnika przy
-\\ odejmowaniu obciążenia\end{tabular} &
-\begin{tabular}{@{}c@{}}$\Delta l \unit{[mm]}$\end{tabular}\\
-\midrule
-0,957  &   9,38817  &  0,42  &  0,43  &  0,2125  \\
-1,968  &  19,30608  &  0,91  &  0,92  &  0,4575  \\
-2,956  &  28,99836  &  1,31  &  1,33  &  0,6600  \\
-3,951  &  38,75931  &  1,70  &  1,73  &  0,8575  \\
-4,918  &  48,24558  &  2,06  &  2,08  &  1,0350  \\
-5,946  &  58,33026  &  2,44  &        &  1,2200  \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\newpage
+\subsection{Pręt aluminiowy}
 
 \section{Wykresy}
 
