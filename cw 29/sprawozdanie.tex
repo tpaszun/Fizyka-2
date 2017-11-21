@@ -36,15 +36,28 @@
 Celem ćwiczenia jest wyznaczenie modułu Younga dla różnych materiałów na bazie pomiarów prędkości rozchodzenia się fal dźwiękowych (podłóżnych) w prętach.
 
 \section{Wstęp teoretyczny}
+Moduł Younga (E) to współczynnik sprężystości podłużnej. Określa on własnści sprężyste ciała sta-
+łego, charakteryzując podatność materiału na odkształcenia podłużne: rozciąganie, ściskanie, zgniatanie.
+Jego jednostką jest pascal ( Pa).
+Z teorii drgań sprężystych oraz równania ruchu fali wiemy, że prędkość rozchodzeniasię fali wciele stałym zależy od gęstości oraz Modułu Younga, co opisuje wzór:
+$$v=\sqrt{\frac{E}{\rho}}$$
+Przekształcając powyższy wzór otzrymujemy:
+$$E=\rho v^2$$
 
+Interferencja fal jest to zjawisko nakładania się fal na siebie, w wyniku czego powstaje nowy, przestrzenny rozkład amplitudy fali.	Jeśli w pręcie interferują fala stojąca i fala padająca to powstaje fala stojąca.
+Wzór na długość fali stojącej:
+$$l=\frac{1}{2}\lambda$$
+$l$ - długość między węzłami fali, $\lambda$ - długość fali
+Korzystając z tego wzoru możemy wyliczyć wzór na prędkość fali w pręcie:
+$$v=2lf$$
+Wyprowadzamy wzór na moduł Younga, z którego skorzystamy w ćwiczeniu:
+$$E=4\rho l^2 f^2$$
 
-
-
-$$ \lambda_i = \frac{2l}{i} $$
+Szybka transformata Fouriera jest to algorytm wyliczania dyskretnej transformaty Fouriera oraz transformaty do niej odwrotnej. Wykorzystamy ją w ćwiczeniu, aby wyznaczyć częstotliwości kolejnych harmonicznych fali.
 
 $$ v_i = \lambda_if $$
 
-$$ E = \rho v^2 $$
+
 
 
 \section{Wykonanie ćwiczenia}
