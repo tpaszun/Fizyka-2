@@ -47,20 +47,46 @@ Wyznaczenie wartości napięć i prądów w poszczególnych częściach obwodu o
 
 Aby znaleźć poszukiwane prądy powyższe warunki zapisujemy w formie układu odpowiedniej liczby niezależnych równań liniowych.
 
+Analizując układ z rysunku \ref{fig:mostek} możemy wyprowadzić stosunek oporów:
+
+$$ \frac{R_x}{R_2}=\frac{R_3}{R_4} $$
+
+i przekształcając równanie:
+
+$$ R_x = R_2\frac{R_3}{R_4} $$
+
+gdzie $R_x$ jest poszukiwanym oporem.
+
 \begin{figure}[!htp]
 \centerline{\includegraphics[scale=0.5]{mostek.png}}
-\caption{Przyrząd pomiarowy}
+\caption{Schemat oporowego mostka Wheatstone'a}
 \label{fig:mostek}
 \end{figure}
 
+\section{Układ pomiarowy}
+
+Na rysunku \ref{fig:uklad} przedstawiony jest przyrząd pomiarowy, w którym zastosowano drut oporowy wraz z linijką o dokładności $1 \unit{mm}$ służącą określeniu położenia punktu D od początku drutu (długość $a$). Długość drutu wynosi $l = 100 \unit{cm}$. Napięcie zasilania układu wynosiło $0,288 \unit{V}$. Opór $R_2$ stanowi opornica dekadowa. Symbolem $R_x$ oznaczono zestaw badanych oporników.
+
+Jako, że w układzie zastosowano jednorodny drut oporowy równanie wartości poszukiwanego oporu możemy przedstawić jako:
+
+$$ R_x = R_2\frac{a}{b} $$
+
+Wiedząc, że $a + b = l$, możemy zapisać je w postaci:
+
+$$ R_x = R_2\frac{a}{l - a} $$
+
 \begin{figure}[!htp]
 \centerline{\includegraphics[scale=0.5]{uklad.png}}
-\caption{Przyrząd pomiarowy}
+\caption{Przyrząd pomiarowy - mostek Wheatstone'a z drutem oporowym}
 \label{fig:uklad}
 \end{figure}
 
 \section{Wykonanie ćwiczenia}
 
+\begin{enumerate}
+  \item Podłączenie układu pomiarowego zgodnie ze schematem.
+  \item Wykonanie dziesięciu pomiarów oporów dla różnych wartości $R_2$ dla każdego z badanych oporów.
+\end{enumerate}
 
 \section{Wyniki pomiarów}
 
