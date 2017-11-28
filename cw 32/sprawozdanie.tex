@@ -95,6 +95,35 @@ $$ R_x = R_2\frac{a}{l - a} $$
 
 \section{Opracowanie wyników}
 
+\subsection{Połączenie szeregowe}
+
+Wartość oporu przy szeregowym połączeniu oporów $R_{x_1}$ oraz $R_{x_2}$ możemy obliczyć stosując wzór na opór zastępczy:
+
+$$ R_{szer} = R_{x_1} + R_{x_2} = 28,10 \unit{\Omega} $$
+
+(tutaj niepewność pomiaru)
+$$ u(R_szer) = $$
+
+
+\subsection{Połączenie równoległe}
+
+Wartość oporu przy szeregowym połączeniu oporów $R_{x_1}$ oraz $R_{x_2}$ możemy obliczyć stosując wzór na opór zastępczy:
+
+$$ R_rów = \frac{R_{x_1} R_{x_2}}{R_{x_1} + R_{x_2}} = 6,24 \unit{\Omega} $$
+
+\subsection{Połączenie mieszane 1}
+
+Wartość oporu przy równoległym połączeniu oporów $R_{x_1}$ i $R_{x_2}$ oraz szeregowym dołączeniu oporu $R_{x_3}$ możemy obliczyć stosując wzór:
+
+$$ R_{p_1} = R_{szer} + R_{x_3} = 39,78 \unit{\Omega} $$
+
+\subsection{Połączenie mieszane 2}
+
+Wartość oporu przy szeregowym połączeniu oporów $R_{x_1}$ i $R_{x_2}$ oraz równoległym dołączeniu oporu $R_{x_3}$ możemy obliczyć stosując wzór:
+
+$$ R_{p_1} = \frac{R_{szer} R_{x_3}}{R_{szer} + R_{x_3}} = 15,29 \unit{\Omega} $$
+
+
 \subsection{Analiza błędów}
 
 Podczas analizy wyników nie znaleźliśmy błędów grubych. Natomiast analizując wykresy (rysunek ) możemy zauważyć, że zależność odległości $a$ od oporu wzorcowego w powtarzalny sposób odbiega od spodziewanej prostej. Wnioskujemy, że może być to związane z niejednorodnością zastosowanego drutu oporowego, bądź korozją wpływającą na opór punktu styku drutu z suwakiem.
@@ -119,6 +148,10 @@ Podczas analizy wyników nie znaleźliśmy błędów grubych. Natomiast analizuj
 
 
 \subsection{Niepewności pomiarów}
+
+Niepewność pomiaru wartości oporu wyznaczamy przy pomocy wzoru:
+
+$$ u(R_x) = \sqrt{\frac{\sum^n_{i=1}\left(R_i - \overline{R_x} \right)^2}{n(n-1)}} $$
 
 \subsection{Ocena zgodności uzyskanych wyników}
 
